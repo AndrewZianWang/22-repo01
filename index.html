@@ -1,92 +1,91 @@
 <!doctype html>
 <html lang="en" dir="ltr">
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-      <link rel="stylesheet" href="css/main.css">
-      <title>Chicago Public Schools Data</title>
-   </head>
-   <body>
-      <nav class="navbar navbar-expand-lg bg-light navbar-light">
-         <img src="https://media.istockphoto.com/id/1125611715/vector/vector-flag-chicago.jpg?s=612x612&w=0&k=20&c=8QNLp1xTIaWkrssHsXpgU_Lc0WIBa-H-1uk37Q2HBDk=" class="mr-2" style="height:30px;"><a class="navbar-brand" href="#">Public Schools in Chicago</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-body" aria-controls="navbar-body" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-         <div class="collapse navbar-collapse" id="navbar-body">
-            <ul class="navbar-nav mr-auto"></ul>
-            <ul class="navbar-nav ml-auto">
-               <li class="nav-item"><a class="nav-link" href="page1_datasources.html">Data Sources</a></li>
-               <li class="nav-item"><a class="nav-link" href="page2_demographic_visualizations.html">Demographic Visualizations</a></li>
-               <li class="nav-item"><a class="nav-link" href="https://www.cps.edu/">Chicago Public Schools</a></li>
-               <li class="nav-item"><a class="nav-link" href="https://www.isbe.net/Pages/Illinois-Standards-Achievement-Test-(ISAT)-Archive.aspx">ISAT</a></li>
-            </ul>
-         </div>
-      </nav>
-<h1>Public Schools in Chicago</h1>
-         <h2>Visualization 1: ISAT Exceeding % Comparison</h2>
-            <div class="row mb-5">
-               <div class="col">
-                  <iframe src="./viz1.html" height="700" width="100%" style="border:none;"></iframe>
-                  <p class="mt-3">
-                     This bar chart compares the percentage of students exceeding ISAT standards in math and reading across all Chicago public schools. 
-                     Each pair of bars represents a school’s performance in math and reading respectively. Schools are ordered along the x-axis.
-                  </p>
-               </div>
-            </div>
-            <div class="row mb-5">
-               <div class="col">
-                  <iframe src="./viz1_high_performance.html" height="700" width="100%" style="border:none;"></iframe>
-                  <p class="mt-3">
-                     This chart focuses on high-performing schools—those with more than 50% of students exceeding standards in both math and reading. 
-                     It highlights the top academic performers and allows quick visual comparison within this elite group.
-                  </p>
-               </div>
-            </div>
-         <h2>Visualization 2</h2>
-         <div class='row'>
-            <div class='col-md-6'>
-               <p>sunburst with neighborhoods and race demographics - neighborhood on the inside, racial demographics on the outside</p>
-            </div>
-            <embed src="./viz2.html"
-          type="text/html" height="700" width="1000" />
-         </div>
-         <h2>Visualization 3</h2>
-         <div class='row'>
-            <div class='col'><img src='https://unsplash.it/300/300' class=' mx-auto d-block  border-0  rounded-0 '></div>
-            <div class='col-md-6'>
-               <p>parallel categories with income separated into ordinal-leveled data, connected with school districts, individual schools, and test scores.</p>
-            </div>
-            <embed src="./viz3.html"
-          type="text/html" height="700" width="1000" />
-         </div>
-     
-        <h2>Visualization 4</h2>
-            <div class='row mb-5'>
-                  <div class='col-md-6'>
-                     <h5>Map: School-Level Performance</h5>
-                     <p>
-                        This interactive map (<strong>viz4_map_school_performance.html</strong>) shows the performance of individual Chicago public schools based on the average percentage of students exceeding standards in math and reading. 
-                        Each dot represents a school. The size and color of the dots correspond to the performance level—larger and brighter dots indicate higher achieving schools.
-                     </p>
-                  </div>
-                  <div class='col'>
-                     <iframe src='viz4_map_school_performance.html' width='100%' height='400' style='border:none;'></iframe>
-                  </div>
-               </div>
-               
-               <div class='row mb-5'>
-                  <div class='col-md-6'>
-                     <h5>Map: Community-Level Performance</h5>
-                     <p>
-                        This map (<strong>viz4_map_community_performance.html</strong>) aggregates performance by community area. It visualizes the average school performance within each neighborhood. 
-                        Larger and more saturated markers represent communities with stronger academic achievement on average.
-                     </p>
-                  </div>
-                  <div class='col'>
-                     <iframe src='viz4_map_community_performance.html' width='100%' height='400' style='border:none;'></iframe>
-                  </div>
-               </div>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicago Public Schools Data</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="https://media.istockphoto.com/id/1125611715/vector/vector-flag-chicago.jpg?s=612x612&w=0&k=20&c=8QNLp1xTIaWkrssHsXpgU_Lc0WIBa-H-1uk37Q2HBDk=" alt="Chicago Flag" style="height:30px;" class="mr-2">
+        Public Schools in Chicago
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-body">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar-body">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="page1_datasources.html">Data Sources</a></li>
+          <li class="nav-item"><a class="nav-link" href="page2_demographic_visualizations.html">Demographic Visualizations</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://www.cps.edu/">Chicago Public Schools</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://www.isbe.net/Pages/Illinois-Standards-Achievement-Test-(ISAT)-Archive.aspx">ISAT</a></li>
+        </ul>
       </div>
-      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script><script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script><script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script><script src="js/main.js"></script>
-   </body>
+    </nav>
+
+    <!-- Page Intro -->
+    <div class="container mt-5">
+      <div class="text-center mb-4">
+        <h1>Chicago Public Schools: Data Visualizations</h1>
+        <p class="lead">Explore student performance, demographics, and school-level insights across Chicago's public education system.</p>
+      </div>
+
+      <!-- Visualization 1 -->
+      <section class="mb-5">
+        <h2>ISAT Exceeding % Comparison</h2>
+        <p>This bar chart compares the percentage of students exceeding ISAT standards in math and reading across all Chicago public schools. Each pair of bars represents a school’s performance.</p>
+        <iframe src="./viz1.html" height="600" width="100%" style="border:none;"></iframe>
+      </section>
+
+      <!-- High-performing schools -->
+      <section class="mb-5">
+        <h2>Top-Performing Schools</h2>
+        <p>This chart focuses on schools where more than 50% of students exceeded standards in both subjects. It provides a spotlight on academic excellence.</p>
+        <iframe src="./viz1_high_performance.html" height="600" width="100%" style="border:none;"></iframe>
+      </section>
+
+      <!-- Visualization 2: Sunburst -->
+      <section class="mb-5">
+        <h2>Neighborhood and Racial Demographics</h2>
+        <p>This sunburst chart visualizes the racial composition of students across different Chicago neighborhoods. Inner rings represent neighborhoods, outer rings show racial groups.</p>
+        <embed src="./viz2.html" type="text/html" height="600" width="100%" style="border:none;" />
+      </section>
+
+      <!-- Visualization 3: Parallel Categories -->
+      <section class="mb-5">
+        <h2>Income, Districts, and Test Scores</h2>
+        <p>This parallel categories diagram connects household income brackets to school districts and student test scores, revealing structural patterns across socioeconomic lines.</p>
+        <embed src="./viz3.html" type="text/html" height="600" width="100%" style="border:none;" />
+      </section>
+
+      <!-- Visualization 4: Maps -->
+      <section class="mb-5">
+        <h2>Interactive Maps of School Performance</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <h5>School-Level Map</h5>
+            <p>Each dot on this map represents a school, sized and colored based on how many students exceed ISAT standards.</p>
+            <iframe src='viz4_map_school_performance.html' width='100%' height='400' style='border:none;'></iframe>
+          </div>
+          <div class="col-md-6">
+            <h5>Community-Level Map</h5>
+            <p>This map aggregates performance data by community areas, giving a broader view of neighborhood-level achievement.</p>
+            <iframe src='viz4_map_community_performance.html' width='100%' height='400' style='border:none;'></iframe>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
-Project Website.html
-Displaying Project Website.html.
