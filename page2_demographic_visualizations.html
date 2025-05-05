@@ -1,88 +1,79 @@
 <!doctype html>
 <html lang="en" dir="ltr">
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-      <link rel="stylesheet" href="css/main.css">
-      <title>Demographics Data</title>
-   </head>
-   <body>
-      <nav class="navbar navbar-expand-lg bg-light navbar-light">
-         <img src="https://media.istockphoto.com/id/1125611715/vector/vector-flag-chicago.jpg?s=612x612&w=0&k=20&c=8QNLp1xTIaWkrssHsXpgU_Lc0WIBa-H-1uk37Q2HBDk=" alt="Chicago Flag" style="height:30px;" class="mr-2"><a class="navbar-brand" href="index.html">Public Schools in Chicago</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-body" aria-controls="navbar-body" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-         <div class="collapse navbar-collapse" id="navbar-body">
-            <ul class="navbar-nav mr-auto"></ul>
-         </div>
-      </nav>
-      <div class="container" id="bsr-wrapper">
-         <div class='my-5'></div>
-         <div class="jumbotron">
-            <h1 class="display-4">Demographic Visualizations</h1>
-            <p class="lead">Below are some visualizations for different demographic information for the Chicago neighborhoods.</p>
-            <hr class="my-4">
-            <p>Demographic visualizations are important because it helps us understand trends that in this case tie racial background with different neighborhoods, incomes, and populations. When the data correlates strongly, then we can look further to prevent possible systemic injustices to solve these problems.</p>
-         </div>
-         <div class="row">
-            <div class="col-sm-6 col-md-4">
-               <div class="card text-center">
-                     <embed src="viz_white.html"
-        type="text/html" height="350" width="500" />
-                  <div class="card-body ">
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis expedita incidunt tenetur repellendus vel quam aperiam sunt voluptate maiores dolorum. 
-                     <p class="mt-3 text-center"><a type="button" class="btn btn-primary text-light">Button</a></p>
-                  </div>
-               </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-               <div class="card text-center">
-                  <embed src="viz_black.html"
-        type="text/html" height="350" width="500" />
-                  <div class="card-body ">
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis expedita incidunt tenetur repellendus vel quam aperiam sunt voluptate maiores dolorum. 
-                     <p class="mt-3 text-center"><a type="button" class="btn btn-primary text-light">Button</a></p>
-                  </div>
-               </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-               <div class="card text-center">
-                  <img src="http://unsplash.it/300/200" class="card-img-top" alt="...">
-                  <div class="card-body ">
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis expedita incidunt tenetur repellendus vel quam aperiam sunt voluptate maiores dolorum. 
-                     <p class="mt-3 text-center"><a type="button" class="btn btn-primary text-light">Button</a></p>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="row">
-            <div class="col-sm-6 col-md-4">
-               <div class="card text-center">
-                  <img src="http://unsplash.it/300/200" class="card-img-top" alt="...">
-                  <div class="card-body ">
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis expedita incidunt tenetur repellendus vel quam aperiam sunt voluptate maiores dolorum. 
-                     <p class="mt-3 text-center"><a type="button" class="btn btn-primary text-light">Button</a></p>
-                  </div>
-               </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-               <div class="card text-center">
-                  <img src="http://unsplash.it/300/200" class="card-img-top" alt="...">
-                  <div class="card-body ">
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis expedita incidunt tenetur repellendus vel quam aperiam sunt voluptate maiores dolorum. 
-                     <p class="mt-3 text-center"><a type="button" class="btn btn-primary text-light">Button</a></p>
-                  </div>
-               </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-               <div class="card text-center">
-                  <img src="http://unsplash.it/300/200" class="card-img-top" alt="...">
-                  <div class="card-body ">
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis expedita incidunt tenetur repellendus vel quam aperiam sunt voluptate maiores dolorum. 
-                     <p class="mt-3 text-center"><a type="button" class="btn btn-primary text-light">Button</a></p>
-                  </div>
-               </div>
-            </div>
-         </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demographics Data</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-light navbar-light">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="https://media.istockphoto.com/id/1125611715/vector/vector-flag-chicago.jpg?s=612x612&w=0&k=20&c=8QNLp1xTIaWkrssHsXpgU_Lc0WIBa-H-1uk37Q2HBDk=" alt="Chicago Flag" style="height:30px;" class="mr-2">
+      Public Schools in Chicago
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-body">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container my-5" id="bsr-wrapper">
+    <div class="jumbotron">
+      <h1 class="display-4">Demographic Visualizations</h1>
+      <p class="lead">Explore key demographic data across Chicago neighborhoods, highlighting racial distribution and population characteristics.</p>
+      <hr class="my-4">
+      <p>These visualizations help uncover patterns between racial backgrounds and geographic areas. By visualizing disparities, we can better understand social dynamics and inform equitable policy making.</p>
+    </div>
+
+    <!-- Visualization Cards -->
+    <div class="row">
+      <!-- White Population -->
+      <div class="col-sm-6 col-md-4 mb-4">
+        <div class="card text-center h-100">
+          <div class="card-header font-weight-bold">White Population Distribution</div>
+          <embed src="viz_white.html" type="text/html" height="300" width="100%" />
+          <div class="card-body">
+            <p>This chart shows the white population across Chicago community areas using a sunburst layout.</p>
+            <a class="btn btn-primary text-light" href="viz_white.html" target="_blank">View Chart</a>
+          </div>
+        </div>
       </div>
-      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script><script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script><script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script><script src="js/main.js"></script>
-   </body>
+
+      <!-- Black Population -->
+      <div class="col-sm-6 col-md-4 mb-4">
+        <div class="card text-center h-100">
+          <div class="card-header font-weight-bold">Black Population Distribution</div>
+          <embed src="viz_black.html" type="text/html" height="300" width="100%" />
+          <div class="card-body">
+            <p>This chart shows the black population across neighborhoods, emphasizing regional concentration patterns.</p>
+            <a class="btn btn-primary text-light" href="viz_black.html" target="_blank">View Chart</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Placeholder for future -->
+      <div class="col-sm-6 col-md-4 mb-4">
+        <div class="card text-center h-100">
+          <div class="card-header font-weight-bold">Coming Soon</div>
+          <img src="https://unsplash.it/300/200" class="card-img-top" alt="Placeholder">
+          <div class="card-body">
+            <p>Future visualization for income or age-based population distributions in Chicago community areas.</p>
+            <a class="btn btn-secondary disabled">Coming Soon</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
 </html>
