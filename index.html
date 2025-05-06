@@ -50,19 +50,20 @@
         <h2>Top-Performing Schools</h2>
         <p>This chart focuses on schools where more than 50% of students exceeded standards in both subjects. It provides a spotlight on academic excellence.</p>
         <iframe src="./viz1_high_performance.html" height="600" width="100%" style="border:none;"></iframe>
+        <p>This visualization shows the handful of schools that exceeded standards. Most of these schools have prestigious names that include "Gifted", "Academy", "Classical", or "Magnet". Also, only a handful of high schools show up in the data set overall, so high schools are over-represented in this data set of overachieving schools.</p>
       </section>
 
       <!-- Visualization 2: Sunburst -->
       <section class="mb-5">
         <h2>Neighborhood and Racial Demographics</h2>
-        <p>This sunburst chart visualizes the racial composition of students across different Chicago neighborhoods. Inner rings represent neighborhoods, outer rings show racial groups.</p>
+        <p>This  chart visualizes the schools by their reading and math scores, with the color representing their school ID number. We wondered whether the school ID number would have any effect, but there seems to be no significant trend there. What we did find is that there were many more schools with high-level math scores (95%+) than reading scores, and a handful of schools chose not to submit their scores.</p>
         <embed src="./viz2.html" type="text/html" height="600" width="100%" style="border:none;" />
       </section>
 
       <!-- Visualization 3: Parallel Categories -->
       <section class="mb-5">
         <h2>Income, Districts, and Test Scores</h2>
-        <p>This parallel categories diagram connects household income brackets to school districts and student test scores, revealing structural patterns across socioeconomic lines.</p>
+        <p>This visualization highlights the reading and math scores when compared to the location of the school. While there were no clear correlations, we found that the Morth and Northwest schools had higher scores in general than the South side schools.</p>
         <embed src="./viz3.html" type="text/html" height="600" width="100%" style="border:none;" />
       </section>
 
@@ -82,12 +83,12 @@
         <div class="row">
           <div class="col-md-6">
             <h5>School-Level Map</h5>
-            <p>Each dot on this map represents a school, sized and colored based on how many students exceed ISAT standards.</p>
+            <p>Each dot on this map represents a school, sized and colored based on how many students exceed ISAT standards. Clearly, there are very few schools that exceed ISAT standards in the Chicago area.</p>
             <iframe src='viz4_map_school_performance.html' width='100%' height='400' style='border:none;'></iframe>
           </div>
           <div class="col-md-6">
             <h5>Community-Level Map</h5>
-            <p>This map aggregates performance data by community areas, giving a broader view of neighborhood-level achievement.</p>
+            <p>This map aggregates performance data by community areas, giving a broader view of neighborhood-level achievement. Mount Greenwood is the neighborhood with the best achievement, followed by Forest Glen and Edison Park</p>
             <iframe src='viz4_map_community_performance.html' width='100%' height='400' style='border:none;'></iframe>
           </div>
         </div>
